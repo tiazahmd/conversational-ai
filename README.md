@@ -1,6 +1,3 @@
-Certainly! Here's the README content in Markdown format:
-
-```markdown
 # Voice Assistant Code
 
 ## Description
