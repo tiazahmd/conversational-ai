@@ -46,6 +46,3 @@ Replace "YOUR_API_KEY" with your actual OpenAI API key.
 - The assistant utilizes the `say` command for voice output. Ensure your system supports this command for proper functionality.
 
 Feel free to customize the code and experiment with different models and configurations based on the OpenAI API documentation.
-```
-
-Copy and paste this content into a file with a `.md` extension, such as `README.md`, in your project directory.
