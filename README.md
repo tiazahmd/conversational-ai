@@ -29,10 +29,8 @@ Replace "YOUR_API_KEY" with your actual OpenAI API key.
 1. Run the script by executing the following command:
 
    ```bash
-   python filename.py
+   python main.py
    ```
-
-   Replace "filename.py" with the actual name of your Python script.
 
 2. The voice assistant will prompt you to speak. Provide your input.
 

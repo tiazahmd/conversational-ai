@@ -15,10 +15,10 @@ def get_voice_input():
         return text
     except sr.UnknownValueError:
         print("Sorry, I could not understand your audio.")
-        return None
+        return "bye"
     except sr.RequestError as e:
         print(f"Could not request results from Google Speech Recognition service; {e}")
-        return None
+        return "bye"
     
 def voice_output(text, rate = 150):
     try:
@@ -49,8 +49,9 @@ def run_ai(client, thread_id, run_id):
 
 def converse(client, assistant, thread):
     while True:
+        print("Waiting for voice input...")
         prompt = get_voice_input()
-        print("Imtiaz: " + prompt)
+        print("User: " + prompt)
         
         if prompt == "bye":
             break
