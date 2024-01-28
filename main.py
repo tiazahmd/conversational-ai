@@ -8,7 +8,7 @@ def get_voice_input():
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         recognizer.adjust_for_ambient_noise(source, duration=1)
-        audio = recognizer.listen(source, timeout=10)
+        audio = recognizer.listen(source, timeout=20, phrase_time_limit = 20)
 
     try:
         text = recognizer.recognize_google(audio)
